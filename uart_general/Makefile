@@ -45,6 +45,9 @@ synth:
 flash:
 	openFPGALoader -b basys3 uart_echo.bit
 
+com:
+	screen /dev/ttyUSB1 9600
+	
 clean:
 	rm -f vivado* clock*
 	rm -rf .Xil
